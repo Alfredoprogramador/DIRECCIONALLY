@@ -3,8 +3,8 @@ const formFeedback = document.getElementById("formFeedback");
 
 if (quoteForm && formFeedback) {
   quoteForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formFeedback.textContent = "Recebemos sua solicitação. Em breve nossa equipe entrará em contato.";
+    const hasConfiguredEndpoint =
+      quoteForm.getAttribute("action") && quoteForm.getAttribute("action") !== "#";
 
     if (window.gtag) {
       window.gtag("event", "generate_lead", {
@@ -17,6 +17,11 @@ if (quoteForm && formFeedback) {
       window.fbq("track", "Lead");
     }
 
-    quoteForm.reset();
+    if (!hasConfiguredEndpoint) {
+      event.preventDefault();
+      formFeedback.textContent =
+        "Formulário em modo demonstração. Configure o endpoint de envio para receber solicitações.";
+      quoteForm.reset();
+    }
   });
 }

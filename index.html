@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <!-- Google tag (gtag.js) -->
+    <!-- TODO: substituir AW-123456789 pelo ID oficial da conta Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-123456789"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -48,6 +49,7 @@
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s);
       })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      // TODO: substituir 123456789012345 pelo Pixel ID oficial
       fbq("init", "123456789012345");
       fbq("track", "PageView");
     </script>
@@ -181,6 +183,7 @@
       <section class="section" id="orcamento">
         <div class="container">
           <h2>Área de orçamento</h2>
+          <!-- TODO: substituir action por endpoint real de envio do orçamento -->
           <form class="quote-form" id="quoteForm" action="#" method="post">
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" autocomplete="name" required />
@@ -215,8 +218,10 @@
       <div class="container footer-grid">
         <div>
           <h2>Contato e localização</h2>
+          <!-- TODO: substituir contato de exemplo pelo WhatsApp oficial -->
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/5500000000000">(00) 00000-0000</a></p>
           <p><strong>Instagram:</strong> <a href="#" aria-label="Instagram da Direccionally">@direccionally</a></p>
+          <!-- TODO: substituir endereço de exemplo pelo endereço oficial -->
           <p><strong>Endereço:</strong> Av. Exemplo, 1000 - São Paulo/SP</p>
         </div>
         <iframe

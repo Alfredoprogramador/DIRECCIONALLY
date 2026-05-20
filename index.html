@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIRECCIONALLY | Branding e Tráfego Pago</title>
+  <meta name="description" content="Site institucional premium da DIRECCIONALLY: branding digital e preparação para tráfego pago." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">DIRECCIONALLY</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav id="menu" class="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Processo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="tag">Posicionamento premium</p>
+        <h1>Transformamos presença digital em direção estratégica</h1>
+        <p>
+          Branding digital + preparação para tráfego pago com foco em clareza de posicionamento,
+          autoridade e geração de oportunidades.
+        </p>
+        <a class="btn" href="#contato">Solicitar diagnóstico</a>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Branding Digital</h3>
+            <p>Definição de identidade, mensagem e diferenciação para sua marca se destacar.</p>
+          </article>
+          <article class="card">
+            <h3>Estrutura para Tráfego Pago</h3>
+            <p>Organização de proposta, ofertas e ativos digitais antes da escala em mídia.</p>
+          </article>
+          <article class="card">
+            <h3>Direcionamento Estratégico</h3>
+            <p>Plano de ação com prioridades para crescimento consistente e previsível.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="section alt">
+      <div class="container">
+        <h2>Processo</h2>
+        <ol class="steps">
+          <li>Diagnóstico do cenário atual</li>
+          <li>Definição de posicionamento e mensagem</li>
+          <li>Estruturação da presença digital</li>
+          <li>Preparação para aquisição paga</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <form id="contact-form" class="contact-form">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+          <p id="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> DIRECCIONALLY. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

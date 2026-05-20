@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Empreendimento de alto padrão</title>
+  <desc id="d">Ilustração abstrata de empreendimento premium</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263b74"/><stop offset="1" stop-color="#0c1730"/></linearGradient></defs>
+  <rect width="900" height="600" fill="url(#g)"/>
+  <rect x="90" y="100" width="720" height="400" rx="22" fill="#121f3f" stroke="#4f6eb3"/>
+  <circle cx="720" cy="190" r="70" fill="#1b2f5e"/>
+  <text x="450" y="330" text-anchor="middle" fill="#dbe7ff" font-size="40" font-family="Arial, sans-serif">Case Empreendimento</text>
+</svg>

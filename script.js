@@ -20,7 +20,7 @@ if (quoteForm && formFeedback) {
     if (!hasConfiguredEndpoint) {
       event.preventDefault();
       formFeedback.textContent =
-        "Formulário em modo demonstração. Configure o endpoint de envio para receber solicitações.";
+        "Formulário em modo demonstração. Configure o endpoint de envio para processar solicitações.";
       quoteForm.reset();
     }
   });

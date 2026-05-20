@@ -19,11 +19,21 @@ if (form && feedback) {
     event.preventDefault();
     const formData = new FormData(form);
     const name = String(formData.get('name') || '').trim();
-    if (!name) {
-      feedback.textContent = 'Por favor, informe seu nome.';
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
+    if (!name || !email || !message) {
+      feedback.textContent = 'Por favor, preencha nome, email e mensagem.';
       return;
     }
-    feedback.textContent = `Obrigado, ${name}! Retornaremos seu contato em breve.`;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      feedback.textContent = 'Por favor, informe um email válido.';
+      return;
+    }
+
+    feedback.textContent = `Obrigado, ${name}! Em breve entraremos em contato.`;
     form.reset();
   });
 }
